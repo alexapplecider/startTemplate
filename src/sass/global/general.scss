@@ -1,0 +1,41 @@
+//Цвета
+$c-main: #000;
+$c-second: #fff;
+$c-bg-main: #1e7874;
+$c-bg-second: #1c8a85;
+$c-bg-third: #186068;
+
+//Типографика
+$f-main: "Roboto", "Arial", sans-serif;
+$f-second: "Montserrat", "Arial", sans-serif;
+$f-text-size: 10px;
+$f-base-lh: 1.3;
+
+html {
+	font-size: $f-text-size;
+}
+
+body {
+	font-family: $f-main;
+	line-height: $f-base-lh;
+	color: $c-main;
+}
+
+// Breakpoints container
+$desktop: 1170px;
+$tablet: 768px;
+$mobile: 320px;
+// Breakpoints container
+.container {
+	max-width: $desktop;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1.28205128%;
+	@media (max-width: $tablet) {
+		max-width: $tablet;
+		padding: 0 2.60416666%;
+	}
+	@media (max-width: $mobile) {
+		max-width: $mobile;
+	}
+}

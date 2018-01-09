@@ -1,0 +1,41 @@
+mixin slide-news(data)
+	each item in data
+		.slide-news
+			img.slide-news__img(src=item.img, alt="")
+			strong.slide-news__header!=item.title
+			p.slide-news__text!=item.text
+			a.slide-news__link(href=item.href) Далее...
+
+mixin feature-card(data)
+	each item in data
+		.feature-card__item
+			.feature-card__item-img
+				img(src=item.img, alt='')
+			h3.feature-card__item-header!=item.title
+			p.feature-card__item-text!=item.text
+
+mixin what-we-do-slides(data)
+	each item in data
+		.what-we-do__slide
+			.what-we-do__slide-img
+				img(src=item.img, alt='')
+			p.what-we-do__slide-text!=item.text
+				br
+				a.what-we-do__slide-link(href=item.href)=item.hrefText
+
+mixin our-team-slide(data)
+	each item in data
+		.our-team__slide
+			.our-team__slide-img
+				img(src=item.img, alt='')
+			p.our-team__slide-title=item.title
+			p.our-team__slide-sub-title=item.subTitle
+
+mixin objectItems(data)
+	each item in data
+			li.object-list__item
+				a.object-list__link(href=item.href)
+					img(src=item.img, alt="")
+					.link-info
+						h2.link-info__title=item.title
+						p.link-info__text=item.text
