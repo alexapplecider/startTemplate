@@ -1,3 +1,6 @@
+$placeholder-color: #9697a1;
+
+
 * {
   box-sizing: border-box;
 }
@@ -8,10 +11,10 @@ img {
   height: auto;
 }
 
-::-webkit-input-placeholder {color: #9697a1;}
-::-moz-placeholder          {color: #9697a1;}/* Firefox 19+ */
-:-moz-placeholder           {color: #9697a1;}/* Firefox 18- */
-:-ms-input-placeholder      {color: #9697a1;}
+::-webkit-input-placeholder {color: $placeholder-color;}
+::-moz-placeholder          {color: $placeholder-color;} /* Firefox 19+ */
+:-moz-placeholder           {color: $placeholder-color;} /* Firefox 18- */
+:-ms-input-placeholder      {color: $placeholder-color;}
 
 // Обнуление отступов по умолчанию у списков
 ul, li {
@@ -52,4 +55,42 @@ input {
   &:active{
     outline: none;
   }
+}
+
+.btnScroll {
+	position: fixed;
+	bottom: -50px;
+	right: 100px;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #1597cf;
+	border-radius: 50%;
+	background-color: black;
+	outline: none;
+	cursor: pointer;
+	z-index: 100;
+	transition: 0.4s all;
+	&.btnActive {
+		bottom: 50px;
+		@media (max-width: $tablet) {
+			bottom: 30px;
+			right: 30px;
+		}
+		@media (max-width: 480px) {
+			bottom: 15px;
+			right: 15px;
+		}
+	}
+	&:after {
+		position: absolute;
+		top: 43%;
+		left: 38%;
+		content: "";
+		width: 10px;
+		height: 10px;
+		margin: 0;
+		border-top: 2px solid #1597cf;
+		border-left: 2px solid #1597cf;
+		transform: rotate(45deg);
+	}
 }
