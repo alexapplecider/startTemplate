@@ -1,21 +1,21 @@
 $(document).ready(function () {
 
 	
-				// кнопка мобильного меню
+				// Кнопка мобильного меню
 	// var mobMenuButton = $('.mobile-menu__btn'),
 	// 		mobMenuBlock = $('.mobile-menu-nav-list');
 	// $('.mobile-menu__btn').on('click', function (event) {
 	// 	mobMenuBlock.toggleClass('mobile-menu-nav-list--show');
 	// });
 
-				// настройка списка в мобильном меню
+				// Настройка списка в мобильном меню
 	// $('.mobile-menu-drop').hide();
 	// $('.mobile-menu-nav-list__item--title').click(function () {
 	// 	$('.mobile-menu-nav-list__item--title').toggleClass('mobile-menu-nav-list__item-link--active');
 	// 	$('.mobile-menu-drop').slideToggle(100);
 	// });
 
-				// настройка списков в футере
+				// Настройка списков в футере
 	// var footerListLink = $('.footer-nav__list-link');
 	// 		footerListSubList = $('.footer-nav__sub-list');
 

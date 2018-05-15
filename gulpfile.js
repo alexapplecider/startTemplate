@@ -75,7 +75,7 @@ gulp.task('scripts', function () {
       'src/js/*.js'
     ])
     .pipe(concat('main.js'))
-    .pipe(uglify()) // Сжимаем JS файл
+    // .pipe(uglify()) // Сжимаем JS файл
 
     .pipe(gulp.dest('src/js')) // Выгружаем результат
     .pipe(browserSync.reload({
