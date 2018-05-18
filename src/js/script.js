@@ -1,21 +1,20 @@
 $(document).ready(function () {
-
 	
-				// Кнопка мобильного меню
+	// Кнопка мобильного меню
 	// var mobMenuButton = $('.mobile-menu__btn'),
 	// 		mobMenuBlock = $('.mobile-menu-nav-list');
 	// $('.mobile-menu__btn').on('click', function (event) {
 	// 	mobMenuBlock.toggleClass('mobile-menu-nav-list--show');
 	// });
 
-				// Настройка списка в мобильном меню
+	// Настройка списка в мобильном меню
 	// $('.mobile-menu-drop').hide();
 	// $('.mobile-menu-nav-list__item--title').click(function () {
 	// 	$('.mobile-menu-nav-list__item--title').toggleClass('mobile-menu-nav-list__item-link--active');
 	// 	$('.mobile-menu-drop').slideToggle(100);
 	// });
 
-				// Настройка списков в футере
+	// Настройка списков в футере
 	// var footerListLink = $('.footer-nav__list-link');
 	// 		footerListSubList = $('.footer-nav__sub-list');
 
@@ -25,7 +24,7 @@ $(document).ready(function () {
 	// 	$('.footer-nav__sub-list').toggleClass('footer-nav__sub-list--show');
 	// });
 
-				//- Кнопка скролла в начало страницы
+	//- Кнопка скролла в начало страницы
 	// $(".btnScroll").click(function() {
 	// 	$("body").animate({ "scrollTop": 0}, 1000);
 	// 	$("html").animate({ "scrollTop": 0}, 1000);
@@ -39,15 +38,15 @@ $(document).ready(function () {
 	// })
 
 
-					// WOW анимация
+	// WOW анимация
 	// new WOW().init();
 
 
-				// Плавный скролл к нужному элементу меню по якорю
+	// Плавный скролл к нужному элементу меню по якорю
 	// $('a[href^="#"]').bind("click", function (e) {
-		// if ( mobMenuBlock.hasClass('mobile-menu-block--show') ) { // Если нажатие происходит в моб меню
-		// 	mobMenuBlock.toggleClass('mobile-menu-block--show'); // закрыть меню и перейти к секции
-		// }
+	// if ( mobMenuBlock.hasClass('mobile-menu-block--show') ) { // Если нажатие происходит в моб меню
+	// 	mobMenuBlock.toggleClass('mobile-menu-block--show'); // закрыть меню и перейти к секции
+	// }
 	// 	var anchor = $(this);
 
 	// 	if ( $(window).width() <= '768') {
@@ -63,7 +62,7 @@ $(document).ready(function () {
 	// 	return false;
 	// });
 
-				// Фикcированный хедер при скролле
+	// Фикcированный хедер при скролле
 	// $("#nav-and-logo").removeClass("default");
 	// $(window).scroll(function() {
 	// 	if ($(this).scrollTop() > 20) {
@@ -73,7 +72,7 @@ $(document).ready(function () {
 	// 	};
 	// });
 
-					// Табы
+	// Табы
 	// function openTypeObjects(evt, cityName) {
 	// 	var i, tabcontent, tablinks; // Declare all variables
 	// 	tabcontent = document.getElementsByClassName("object__tabs-content"); // Get all elements with class="tabcontent" and hide them
@@ -88,6 +87,5 @@ $(document).ready(function () {
 	// 	evt.currentTarget.className += " objects__tabs-tablinks--active";
 	// }
 	// document.getElementById("defaultOpen").click();
-
 
 });

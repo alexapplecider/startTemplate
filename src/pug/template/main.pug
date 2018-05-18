@@ -8,27 +8,18 @@ html(lang="ru-RU")
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width,initial-scale=1")
 
-    link(rel="stylesheet" href="css/font-awesome.min.css")
     //- link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet")
-    //- link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
-    //- link(rel="stylesheet" type="text/css" href="css/slick.css")
-    //- link(rel="stylesheet" type="text/css" href="css/owl.carousel.min.css")
-    //- link(rel="stylesheet" type="text/css" href="css/animate.css")
+
+    include ./libs-css
     link(rel="stylesheet" type="text/css" href="css/main.min.css")
 
-	body(class="" + bodyClass)
-		include ../components/header
-		block content
-		include ../components/footer
-
-		//- Кнопка скролла в начало страницы
-    //- button.btnScroll
+  body(class="" + bodyClass)
+    //- include ../components/header
+    block content
+    //- include ../components/footer
 
     //- Кнопка скролла в начало страницы
     //- button.btnScroll
 
-    //- script(src="js/jquery-3.1.1.min.js")
-    //- script(src="js/slick.min.js" type="text/javascript")
-    //- script(src="js/owl.carousel.min.js" type="text/javascript")
-    //- script(src="js/wow.min.js" type="text/javascript")
+    include ./libs-js
     script(src="js/script.js" type="text/javascript")
