@@ -1,120 +1,61 @@
 header.header
-	.container-full
-
-		.container
-			.top-line
-				a.logo(href='index.html')
-					img(src='img/header-logo.png', alt='logo Avitek engeneering')
-				nav.top-line__nav
-					ul.nav-list
-						li.nav-list__item
-							a.nav-list__item-link(href='#')
-								| Компания 
-								i.fa.fa-angle-down(aria-hidden='true')
-
-							.drop-menu
-								ul.drop-menu__list
-									li.drop-menu__list-item(style='color: #1c96ce;') О компании
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='objects.html') Объекты
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Новости
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Отзывы
-						li.nav-list__item
-							a.nav-list__item-link(href='#')
-								| Кондиционирование 
-								i.fa.fa-angle-down(aria-hidden='true')
-
-							.drop-menu
-								ul.drop-menu__list
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') VRF/VRV Системы
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Фанкойлы и чиллеры
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Прецизионное кондиционирование
-						li.nav-list__item
-							a.nav-list__item-link(href='#')
-								| Вентиляция 
-								i.fa.fa-angle-down(aria-hidden='true')
-							.drop-menu
-								ul.drop-menu__list
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Проектирование и монтаж
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Обслуживание и ремонт
-						li.nav-list__item
-							a.nav-list__item-link(href='#')
-								| Отопление 
-								i.fa.fa-angle-down(aria-hidden='true')
-							.drop-menu
-								ul.drop-menu__list
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Котельное оборудование
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Теплообменное оборудование
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Системы отопления
-						li.nav-list__item
-							a.nav-list__item-link(href='#')
-								| Пожарные системы 
-								i.fa.fa-angle-down(aria-hidden='true')
-							.drop-menu
-								ul.drop-menu__list
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Водяное пожаротушение
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Газовое пожаротушение
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Порошковое пожаротушение
-									li.drop-menu__list-item
-										a.drop-menu__list-item-link(href='#') Сервисное обслуживание
-						li.nav-list__item
-							a.nav-list__item-link(href='#') Контакты
-				.top-line__contacts
-					a.top-line__contacts-number(href='tel:74996545567') +7 499 654-55-67
-					a.top-line__contacts-mail(href='mailto:info@avitekengineering.ru')  info@avitekengineering.ru
-				.mobile-menu
-					a.mobile-menu__btn
-						i.fa.fa-bars(aria-hidden='true')
-					ul.mobile-menu-nav-list
-						a.mobile-menu__btn.mobile-menu__btn--open
-							i.fa.fa-times(aria-hidden='true')
-						li.mobile-menu-nav-list__item
-							a.mobile-menu-nav-list__item-link.mobile-menu-nav-list__item--title(href='#')
-								| Услуги 
-								i.fa.fa-angle-down(aria-hidden='true')
-							.mobile-menu-drop
-								ul.mobile-menu-drop__list
-									li.mobile-menu-drop__list-item
-										a.mobile-menu-drop__list-item-link(href='#') Кондиционирование
-									li.mobile-menu-drop__list-item
-										a.mobile-menu-drop__list-item-link(href='#') Вентиляция
-									li.mobile-menu-drop__list-item
-										a.mobile-menu-drop__list-item-link(href='#') Отопление
-									li.mobile-menu-drop__list-item
-										a.mobile-menu-drop__list-item-link(href='#') Пожарные системы
-									li.mobile-menu-drop__list-item
-										a.mobile-menu-drop__list-item-link(href='#') Водоснабжение
-								ul.mobile-menu-drop__list.mobile-menu-drop__list--second-block
-									li.mobile-menu-drop__list-item
-										a.mobile-menu-drop__list-item-link(href='#') VRF/VRV Системы
-									li.mobile-menu-drop__list-item
-										a.mobile-menu-drop__list-item-link(href='#') Фанкойлы и чиллеры
-									li.mobile-menu-drop__list-item
-										a.mobile-menu-drop__list-item-link(href='#') Прецизионное кондиционирование
-						li.mobile-menu-nav-list__item
-							a.mobile-menu-nav-list__item-link(href='#') О компании
-						li.mobile-menu-nav-list__item
-							a.mobile-menu-nav-list__item-link(href='objects.html') Объекты
-						li.mobile-menu-nav-list__item
-							a.mobile-menu-nav-list__item-link(href='#') Отзывы
-						li.mobile-menu-nav-list__item
-							a.mobile-menu-nav-list__item-link(href='#') Новости
-						li.mobile-menu-nav-list__item
-							a.mobile-menu-nav-list__item-link(href='#') Контакты
-
 	.container
-		.header__text
-			h1 #{title}
+
+		.top-line
+			a.logo(href='index.html')
+				img(src='img/logo.png', alt='logo')
+
+			nav.top-line__nav
+				ul.top-line__nav-list
+					li.top-line__nav-list-item
+						a.top-line__nav-list-item-link(href='#')
+							| Раздел №1
+					li.top-line__nav-list-item
+						a.top-line__nav-list-item-link(href='#')
+							| Раздел №2
+					li.top-line__nav-list-item
+						a.top-line__nav-list-item-link(href='#')
+							| Раздел №3
+					li.top-line__nav-list-item
+						a.top-line__nav-list-item-link(href='#')
+							| Раздел №4
+					li.top-line__nav-list-item
+						a.top-line__nav-list-item-link(href='#')
+							| Раздел №5
+
+			.top-line__contacts
+				a.top-line__contacts-compare(href="#") 
+					.top-line__contacts-compare-icon.compare-icon
+						span.compare-icon__count 3
+					| Сравнение
+				a.top-line__contacts-account(href="#") Личный кабинет
+				a.top-line__contacts-number(href='tel:70000000000') +7 000 000-00-00
+					.top-line__contacts-number-phone
+						.rounds
+
+			.mobile-menu
+				a.mobile-menu__btn
+					i.fa.fa-bars(aria-hidden='true')
+				.mobile-menu-block
+					ul.mobile-menu-nav-list
+						a.logo(href='index.html')
+							img(src='img/logo.png', alt='logo')
+						a.mobile-menu__btn.mobile-menu__btn--open
+						li.mobile-menu-nav-list__item
+							a.mobile-menu-nav-list__item-link(href='#') Раздел №1
+						li.mobile-menu-nav-list__item
+							a.mobile-menu-nav-list__item-link(href='#') Раздел №2
+						li.mobile-menu-nav-list__item
+							a.mobile-menu-nav-list__item-link(href='#') Раздел №3
+						li.mobile-menu-nav-list__item
+							a.mobile-menu-nav-list__item-link(href='#') Раздел №4
+						li.mobile-menu-nav-list__item
+							a.mobile-menu-nav-list__item-link(href='#') Раздел №5
+					a.top-line__contacts-compare(href="#") 
+						.top-line__contacts-compare-icon.compare-icon
+							span.compare-icon__count 3
+						| Сравнение
+					a.top-line__contacts-account(href="#") Личный кабинет
+					a.top-line__contacts-number(href='tel:70000000000') +7 000 000-00-00
+						.top-line__contacts-number-phone
+							.rounds
