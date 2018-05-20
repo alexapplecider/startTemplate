@@ -5,7 +5,7 @@ export default class Datapickers {
     this.init();
   }
 
-  initDatapicker(ElementName, Month, arrayDays, CDlassDays) {
+  initDatapicker(ElementName, Month, arrayDays, ClassDays) {
     $(ElementName).datepicker({
       weekStart: 1,
       language: "ru",

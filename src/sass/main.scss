@@ -7,29 +7,3 @@
 @import "components/header";
 
 @import "components/footer";
-
-// общие стили
-a:hover {
-	transition: 0.3s;
-	color: #1597cf;
-}
-
-.btn {
-	display: inline-block;
-	padding: 10px 38px;
-	font-size: 16px;
-	line-height: 20px;
-	margin-top: 15px;
-	border: 1px solid #1c96ce;
-	cursor: pointer;
-	transition: 0.3s;
-	@media (max-width: $mobile) {
-		font-size: 13px;
-	}
-}
-
-.logo {
-	flex-basis: 100%;
-	max-width: 90px;
-	max-height: 47px;
-}

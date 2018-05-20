@@ -1,96 +1,162 @@
 $placeholder-color: #9697a1;
 
-
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 // Защита от переполнения
 img {
-  max-width: 100%;
-  height: auto;
-}
-
-::-webkit-input-placeholder {color: $placeholder-color;}
-::-moz-placeholder          {color: $placeholder-color;} /* Firefox 19+ */
-:-moz-placeholder           {color: $placeholder-color;} /* Firefox 18- */
-:-ms-input-placeholder      {color: $placeholder-color;}
-
-// Обнуление отступов по умолчанию у списков
-ul, li {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  list-style-position: inside;
-}
-
-p {
-  margin: 0;
-}
-
-button {
-  border: none;
-  background: none;
-  color: inherit;
-  &:hover,
-  &:active{
-    outline: none;
-  }
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+	max-width: 100%;
+	height: auto;
 }
 
 input {
-  border: none;
-  &:hover,
-  &:active{
-    outline: none;
-  }
+	border: none;
+	&:hover,
+	&:active {
+		outline: none;
+	}
+}
+::-webkit-input-placeholder {
+	color: $placeholder-color;
+}
+::-moz-placeholder {
+	color: $placeholder-color;
+}
+/* Firefox 19+ */
+:-moz-placeholder {
+	color: $placeholder-color;
+}
+/* Firefox 18- */
+:-ms-input-placeholder {
+	color: $placeholder-color;
 }
 
-.btnScroll {
-	position: fixed;
-	bottom: -50px;
-	right: 100px;
-	width: 50px;
-	height: 50px;
-	border: 2px solid #1597cf;
-	border-radius: 50%;
-	background-color: black;
-	outline: none;
-	cursor: pointer;
-	z-index: 100;
-	transition: 0.4s all;
-	&.btnActive {
-		bottom: 50px;
-		@media (max-width: $tablet) {
-			bottom: 30px;
-			right: 30px;
-		}
-		@media (max-width: 480px) {
-			bottom: 15px;
-			right: 15px;
-		}
-	}
-	&:after {
-		position: absolute;
-		top: 43%;
-		left: 38%;
-		content: "";
-		width: 10px;
-		height: 10px;
-		margin: 0;
-		border-top: 2px solid #1597cf;
-		border-left: 2px solid #1597cf;
-		transform: rotate(45deg);
+// Обнуление отступов по умолчанию у списков и заголовков
+ul, li, h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+li {
+	list-style-position: inside;
+}
+
+p {
+	margin: 0;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 38px;
+	font-size: 16px;
+	line-height: 20px;
+	transition: 0.3s;
+	@media (max-width: $mobile) {
+		font-size: 13px;
 	}
 }
+
+button {
+	border: none;
+	background: none;
+	color: inherit;
+	cursor: pointer;
+	outline: none;
+	&:hover,
+	&:active {
+		outline: none;
+	}
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: 0.3s all;	
+	&:hover {
+		transition: 0.3s all;
+		color: #1597cf;
+	}
+}
+
+//  Кнопка скролла в начало страницы
+// .btnScroll {
+// 	position: fixed;
+// 	bottom: -50px;
+// 	right: 100px;
+// 	width: 50px;
+// 	height: 50px;
+// 	border: 2px solid #1597cf;
+// 	border-radius: 50%;
+// 	background-color: black;
+// 	outline: none;
+// 	cursor: pointer;
+// 	z-index: 100;
+// 	transition: 0.4s all;
+// 	&.btnActive {
+// 		bottom: 50px;
+// 		@media (max-width: $tablet) {
+// 			bottom: 30px;
+// 			right: 30px;
+// 		}
+// 		@media (max-width: 480px) {
+// 			bottom: 15px;
+// 			right: 15px;
+// 		}
+// 	}
+// 	&:after {
+// 		position: absolute;
+// 		top: 43%;
+// 		left: 38%;
+// 		content: "";
+// 		width: 10px;
+// 		height: 10px;
+// 		margin: 0;
+// 		border-top: 2px solid #1597cf;
+// 		border-left: 2px solid #1597cf;
+// 		transform: rotate(45deg);
+// 	}
+// }
+
+// Фикcированный хедер при скролле
+// #nav-and-logo.default {
+//   position: fixed;
+//   top: 0px;
+//   left: 0;
+//   right: 0;
+//   background-color: #262520;
+//   padding: 20px 20%;
+//   z-index: 999;
+//   transition: 0.5s all ease-in-out;
+// }
+
+// Табы
+// .tab {
+// 	overflow: hidden;
+// 	border: 1px solid #ccc;
+// 	background-color: #f1f1f1;
+// 	& button {
+// 		background-color: inherit;
+// 		float: left;
+// 		border: none;
+// 		outline: none;
+// 		cursor: pointer;
+// 		padding: 14px 16px;
+// 		transition: 0.3s;
+// 		&:hover {
+// 			background-color: #ddd;
+// 		}
+// 		&.active {
+// 			background-color: #ccc;
+// 		}
+// 	}
+// }
+// .tabcontent {
+// 	display: none;
+// 	padding: 6px 12px;
+// 	border: 1px solid #ccc;
+// 	border-top: none;
+// }
