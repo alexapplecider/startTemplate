@@ -1,0 +1,39 @@
+form.filter
+  .filter__colors
+    span.filter__colors-title Цвет:
+
+    .colors-group
+      input.colors-group__input#input-red(type="radio" name="color" value="red" checked)
+      label.colors-group__input-label.colors-group__input-label--red(for="input-red")
+
+      input.colors-group__input#input-black(type="radio" name="color" value="black")
+      label.colors-group__input-label.colors-group__input-label--black(for="input-black")
+
+      input.colors-group__input#input-gold(type="radio" name="color" value="gold")
+      label.colors-group__input-label.colors-group__input-label--gold(for="input-gold")
+
+      input.colors-group__input#input-white(type="radio" name="color" value="white")
+      label.colors-group__input-label.colors-group__input-label--white(for="input-white")
+
+      input.colors-group__input#input-green(type="radio" name="color" value="green")
+      label.colors-group__input-label.colors-group__input-label--green(for="input-green")
+
+      input.colors-group__input#input-pink(type="radio" name="color" value="pink")
+      label.colors-group__input-label.colors-group__input-label--pink(for="input-pink")
+
+      input.colors-group__input#input-orange(type="radio" name="color" value="orange")
+      label.colors-group__input-label.colors-group__input-label--orange(for="input-orange")
+
+  .filter__views-type.views-type
+    input.views-type__input#input-all(type="checkbox" name="views-type" value="all")
+    label.views-type__input-label.views-type__input-label--all(for="input-all") Все шары
+
+    input.views-type__input#input-kit(type="checkbox" name="views-type" value="kit" checked)
+    label.views-type__input-label.views-type__input-label--kit(for="input-kit") Комплекты
+
+    input.views-type__input#input-one(type="checkbox" name="views-type" value="one")
+    label.views-type__input-label.views-type__input-label--one(for="input-one") По одному
+
+  .filter__sorting
+    span.filter__sorting-title Сортировать по: 
+    span.filter__sorting-price Цене

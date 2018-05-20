@@ -4,6 +4,7 @@
 @import "global/general";
 @import "global/scaffolding";
 // Components
-@import "components/header";
-
-@import "components/footer";
+@import "components/breadcrumbs";
+@import "components/filter";
+@import "components/products";
+@import "components/pagination";
